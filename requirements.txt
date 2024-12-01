@@ -1,1 +1,7 @@
-
+shiny
+shinywidgets
+textblob
+pandas
+seaborn
+matplotlib
+plotly
