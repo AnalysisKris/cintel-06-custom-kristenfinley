@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ category }} News</title>
+</head>
+<body>
+    <h1>{{ category.capitalize() }} News</h1>
+    <ul>
+        {% for article in category_news %}
+            <li>
+                <a href="{{ article['url'] }}" target="_blank">{{ article['title'] }}</a>
+                <p>{{ article['description'] }}</p>
+                <p><em>Source: {{ article['source'] }} | Published: {{ article['published_at'] }}</em></p>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Top Headlines</a>
+</body>
+</html>

@@ -1,7 +1,10 @@
 shiny
 shinywidgets
 textblob
+shiny
+shinyswatch
 pandas
-seaborn
-matplotlib
-plotly
+requests
+newsapi-python
+python-dotenv
+flask

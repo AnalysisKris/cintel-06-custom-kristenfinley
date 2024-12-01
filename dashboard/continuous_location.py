@@ -64,11 +64,3 @@ def update_news_csv():
     except Exception as e:
         logger.error(f"ERROR in update_news_csv: {e}")
 
-# Function to start the app
-def start_app():
-    """Start the app and call update_news_csv to update the news data."""
-    logger.info("Starting the app...")
-    update_news_csv()
-
-if __name__ == "__main__":
-    start_app()

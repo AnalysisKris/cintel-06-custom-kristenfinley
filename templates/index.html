@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Dashboard</title>
+</head>
+<body>
+    <h1>Top Headlines</h1>
+    <ul>
+        {% for headline in headlines %}
+            <li>
+                <a href="{{ headline['url'] }}" target="_blank">{{ headline['title'] }}</a>
+                <p>{{ headline['description'] }}</p>
+                <p><em>Source: {{ headline['source'] }} | Published: {{ headline['published_at'] }}</em></p>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/search">Search News</a>
+</body>
+</html>
