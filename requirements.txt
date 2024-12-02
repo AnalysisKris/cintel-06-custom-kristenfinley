@@ -8,3 +8,7 @@ requests
 newsapi-python
 python-dotenv
 flask
+dash
+dash-bootstrap-components
+dash-daq
+plotly

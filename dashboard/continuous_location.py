@@ -5,7 +5,6 @@ from pathlib import Path
 import logging
 import requests
 from dashboard.util_logger import setup_logger
-from dashboard.fetch import fetch_news_by_query
 
 # Set up a file logger
 logger, log_filename = setup_logger(__file__)
@@ -63,4 +62,3 @@ def update_news_csv():
             logger.error("No news data to save.")
     except Exception as e:
         logger.error(f"ERROR in update_news_csv: {e}")
-
