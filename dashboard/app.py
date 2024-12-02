@@ -134,9 +134,9 @@ app.layout = html.Div([
 )
 def update_news_display(n_clicks):
     """Update the display with the latest news articles and plot sentiment."""
-    # Update news CSV on button click
+    # Update news CSV with the latest news
     update_news_csv()
-    
+
     # Read the data from the CSV
     data_dir = Path(__file__).parent.joinpath("data")
     fp = data_dir.joinpath("news_articles.csv")
